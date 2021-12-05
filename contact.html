@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script defer src="js/date.js"></script>
+  <link rel="stylesheet" href="css/style.css">
+  <title>Birthrates Research | Contact Us</title>
+</head>
+
+<body>
+  <header>
+    <picture>
+      <img src="images/motherwithheart2.webp" alt="mother icon" class="emblem">
+    </picture>
+    <h1>
+      Birthrate Study 2021
+    </h1>
+  </header>
+  <nav>
+    <ul class="nav-list">
+      <li>
+        <a href="index.html">Home</a>
+      </li>
+      <li>
+        <a href="faq.html">Frequently Asked Questions</a>
+      </li>
+      <li>
+        <a href="contact.html">Contact Us</a>
+      </li>
+    </ul>
+  </nav>
+  <div class="herocontainer">
+    <img class="heroimage" src="images/happyfamily960-70.webp" alt="A silhouette of a happy family holding hands.">
+  </div>
+  <main>
+    <h2>
+      Contact Us
+    </h2>
+    <form method="get" action="thanks.html" id="form">
+      <fieldset>
+        <legend>Contact Information</legend>
+        <label class="top">First Name: <input type="text" name="fname" required pattern="[A-Za-z]+" minlength="2"
+            title="Please enter your first name using capital or lowercase letters with a minimum of two letters."></label>
+        <label class="top">Last Name: <input type="text" name="lname" required pattern="[A-Za-z]+" minlength="2"
+            title="Please enter your last name using capital or lowercase letters with a minimum of two letters."></label>
+        <label class="top">Email: <input type="email" name="email" placeholder="name@gmail.com"></label>
+        <label class="top">Phone number: <input type="tel" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required
+            title="Please enter your phone number with area code following this format: 123-456-7890"></label>
+        <label class="top">Zip Code: <input type="number" name="zipcode" 
+            title="Please enter your zip code. Five numeric characters required. No dashes or parentheses required.">
+        </label>
+        <div class="contactmethod">How would you like to be contacted?
+          <label class="method"><input type="radio" name="contactmethod" value="phone"> Phone</label>
+          <label class="method"><input type="radio" name="contactmethod" value="email"> Email</label>
+          <label class="method"><input type="radio" name="contactmethod" value="mail"> Mail</label>
+        </div>
+        <label class="top">Questions or Comments? <textarea name="addinfo" id="addinfo" cols="30"
+            rows="10"></textarea></label>
+      </fieldset>
+      <button type="submit" class="submit" form="form" formaction="thanks.html" name="reportbutton">Contact Us</button>
+    </form>
+      
+  </main>
+  <footer>
+    <p>Amanda Cane, Unique Grady, Mara Coufal, and Ariel Sherer | <a href="https://www.washburn.edu/" target="_blank"
+        rel="noopener">Washburn University</a></p>
+    <p>&copy; <span id="copyrightyr"></span> | <span id="currentdate"></span></p>
+  </footer>
+</body>
+
+</html>
