@@ -3,9 +3,9 @@ body {
   font-family: 'Roboto', sans-serif;
   max-width: 960px;
   margin: 0 auto;
-  line-height: 1.15;
+  line-height: 1.5;
   text-align: center;
-  font-size: 16px;
+  font-size: 18px;
 }
 
 header {
@@ -43,7 +43,7 @@ nav ul {
 
 nav ul li a {
   display: block;
-  color: rgb(255, 255, 255);
+  color: black;
   text-align: center;
   padding: 1rem;
   text-decoration: none;
@@ -58,6 +58,21 @@ nav a:hover {
 
 main, .herocontainer {
   background-color: rgb(240, 248, 255);
+}
+
+main.contact {
+  padding: 1rem;
+}
+
+.active {
+  text-decoration: underline;
+  font-weight: bold;
+  font-size: 1.25rem;
+}
+
+.required {
+  font-size: 2rem;
+  color: red;
 }
 
 h1 {
@@ -107,26 +122,26 @@ footer p {
 }
 
 form fieldset {
-  margin: 1rem 0;
+  text-align: left;
+  width: 50%;
+  margin: 0 auto;
   padding: 0.5rem 2rem 0.5rem 0.75rem;
-  background-color: rgb(232, 213, 195);
-  box-shadow: 0 0 0.5rem 0.5rem rgb(64, 64, 64);
-  border: 1px solid rgb(64, 64, 64);
+  background-color: rgb(240, 248, 255);
+  border: 1px solid black;
   border-radius: 5px;
 }
 
 legend {
   font-size: 1rem;
-  background-color: rgb(232, 213, 195);
-  border: 1px solid rgb(64, 64, 64);
+  background-color: rgb(240, 248, 255);
+  border: 1px solid black;
   border-radius: 5px;
   margin: 0 10px;
   padding: 0.25rem;
 }
 
 form label.top,
-form div label,
-form div.danger {
+form div label {
   display: block;
   padding: 0.75rem 0;
 
@@ -138,29 +153,10 @@ form label.top textarea {
   display: block;
   width: 100%;
   padding: 0.75rem 0.5rem;
-  color: rgb(64, 64, 64);
-  border: 1px solid rgb(64, 64, 64);
+  color: black;
+  border: 1px solid black;
   border-radius: 5px;
-}
-
-form div.danger {
-  display: flex;
-  align-items: center;
-  text-align: center;
-}
-
-form div.danger label.sbs {
-  padding: 0.75rem;
-}
-
-form label.top #severity {
-  display: block;
-  padding: 0;
-  width: 100%;
-}
-
-form label #severity {
-  padding: 0.25rem;
+  font-size: 1rem;
 }
 
 input[type=radio] {
@@ -171,12 +167,17 @@ input[type=radio] {
 form button.submit {
   display: block;
   padding: 0.75rem;
-  color: rgb(64, 64, 64);
-  background-color: rgb(232, 213, 195);
-  border: 3px solid rgb(64, 64, 64);
+  color: black;
+  background-color: rgb(71, 223, 255);
+  border: 3px solid black;
   border-radius: 1rem;
-  margin: 1rem auto;
+  margin: 1rem 13rem;
   font-size: 1.1rem;
+}
+
+form button.submit:hover {
+  background-color: green;
+  font-size: 1.25rem;
 }
 
 form label.top :required {
@@ -185,11 +186,6 @@ form label.top :required {
 
 form label.top :required:valid {
   border: 2px solid rgb(0, 128, 0);
-}
-
-figure.rainbow,
-figure.thunderstorm {
-  display: none;
 }
 
 .thanks {

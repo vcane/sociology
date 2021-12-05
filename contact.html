@@ -28,34 +28,30 @@
         <a href="faq.html">Frequently Asked Questions</a>
       </li>
       <li>
-        <a href="contact.html">Contact Us</a>
+        <a href="contact.html" class="active">Contact Us</a>
       </li>
     </ul>
   </nav>
   <div class="herocontainer">
     <img class="heroimage" src="images/happyfamily960-70.webp" alt="A silhouette of a happy family holding hands.">
   </div>
-  <main>
+  <main class="contact">
     <h2>
       Contact Us
     </h2>
+    <p>Please complete the form below if you wish to contact us. You may include any questions or comments in the "Questions or Comments?" section. All fields marked with a red asterick (*) and outlined in red are required to be completed to submit the form. The border of the required field will turn green when it has been filled correctly. Please do not forget to provide your phone number or email address and your preferred method of contact, if you would like us to contact you. Thank you for your consideration in participating in this study.</p>
     <form method="get" action="thanks.html" id="form">
       <fieldset>
         <legend>Contact Information</legend>
-        <label class="top">First Name: <input type="text" name="fname" required pattern="[A-Za-z]+" minlength="2"
+        <label class="top">First Name<span class="required">*</span>: <input type="text" name="fname" required pattern="[A-Za-z]+" minlength="2"
             title="Please enter your first name using capital or lowercase letters with a minimum of two letters."></label>
-        <label class="top">Last Name: <input type="text" name="lname" required pattern="[A-Za-z]+" minlength="2"
+        <label class="top">Last Name<span class="required">*</span>: <input type="text" name="lname" required pattern="[A-Za-z]+" minlength="2"
             title="Please enter your last name using capital or lowercase letters with a minimum of two letters."></label>
         <label class="top">Email: <input type="email" name="email" placeholder="name@gmail.com"></label>
-        <label class="top">Phone number: <input type="tel" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required
-            title="Please enter your phone number with area code following this format: 123-456-7890"></label>
-        <label class="top">Zip Code: <input type="number" name="zipcode" 
-            title="Please enter your zip code. Five numeric characters required. No dashes or parentheses required.">
-        </label>
+        <label class="top">Phone Number: <input type="tel" name="phone" title="Please enter your phone number with area code."></label>
         <div class="contactmethod">How would you like to be contacted?
           <label class="method"><input type="radio" name="contactmethod" value="phone"> Phone</label>
           <label class="method"><input type="radio" name="contactmethod" value="email"> Email</label>
-          <label class="method"><input type="radio" name="contactmethod" value="mail"> Mail</label>
         </div>
         <label class="top">Questions or Comments? <textarea name="addinfo" id="addinfo" cols="30"
             rows="10"></textarea></label>
